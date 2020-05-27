@@ -7,19 +7,67 @@
 //
 
 import UIKit
+import Firebase
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
+    
     var window: UIWindow?
-
+    var user: User?
+    let userDefault = UserDefaults.standard
+      let launchedBefore = UserDefaults.standard.bool(forKey: "usersignedin")
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        
+        
+        FirebaseApp.configure()
+               
+               
+              
+               
+               print(Auth.auth().currentUser?.uid)
+               if Auth.auth().currentUser?.uid == nil {
+                   
+                   
+                               DispatchQueue.main.async {
+                                   let menuCOntroller = CreateUserAccount()
+                                   let nav = UINavigationController(rootViewController: menuCOntroller)
+                                                        
+                                   self.window?.rootViewController = nav
+                               }
+               }  else {
+                   
+                   
+                    let mapcontroller = MapView()
+                   
+                   print(Auth.auth().currentUser?.uid )
+                   
+                         guard let uid = Auth.auth().currentUser?.uid else { return }
+                          
+                   mapcontroller.uid = uid
+                           
+                           
+                           let nav = UINavigationController(rootViewController: mapcontroller)
+                                    
+                                                   
+                                                               self.window?.rootViewController = mapcontroller
+                           
+                   
+                   
+                   
+                                           
+               }
+        
+        
+        
+        
         guard let _ = (scene as? UIWindowScene) else { return }
     }
-
+    
+  
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

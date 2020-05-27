@@ -7,16 +7,71 @@
 //
 
 import UIKit
+import UserNotifications
+import Firebase
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUserNotificationCenterDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        //FirebaseApp.configure()
         // Override point for customization after application launch.
+        
+        attemtpToRigesterfornotifictions(application:application)
         return true
     }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        
+        Messaging.messaging().apnsToken = deviceToken
+        print(deviceToken)
+    }
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print("yeaa broo")
+    }
+    
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+        
+        let dataDict:[String: String] = ["token": fcmToken]
+//        NotificationCenter.default.post(name: Notification.Name("FCMToken"), object: nil, userInfo: dataDict)
+        print("registerd with token",fcmToken)
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        
+        completionHandler(.alert)
+    }
+    private func attemtpToRigesterfornotifictions(application:UIApplication) {
+        
+        Messaging.messaging().delegate = self
+        Messaging.messaging().isAutoInitEnabled =
+        true
+        
+        UNUserNotificationCenter.current().delegate = self
+           //user auth
+        
+        let options: UNAuthorizationOptions = [.alert,.badge,.sound]
+        UNUserNotificationCenter.current().requestAuthorization(options: options) { (granted, er) in
+            if let er = er {
+                print(er)
+                return
+            }
+            if granted{
+                print("authGranted")
+            } else {
+                print("Denined")
+            }
+        }
+           application.registerForRemoteNotifications()
+           print("APs")
+           
+           
+       }
+    
 
     // MARK: UISceneSession Lifecycle
 

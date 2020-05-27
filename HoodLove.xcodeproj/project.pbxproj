@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BA41E852473FF6900CD16CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BA41E842473FF6900CD16CC /* GoogleService-Info.plist */; };
 		5BE287782472ACAE001D83DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE287772472ACAE001D83DC /* AppDelegate.swift */; };
 		5BE2877A2472ACAE001D83DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE287792472ACAE001D83DC /* SceneDelegate.swift */; };
 		5BE2877C2472ACAE001D83DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2877B2472ACAE001D83DC /* ViewController.swift */; };
@@ -15,6 +16,20 @@
 		5BE287842472ACB1001D83DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE287822472ACB1001D83DC /* LaunchScreen.storyboard */; };
 		5BE2878F2472ACB1001D83DC /* HoodLoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2878E2472ACB1001D83DC /* HoodLoveTests.swift */; };
 		5BE2879A2472ACB1001D83DC /* HoodLoveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE287992472ACB1001D83DC /* HoodLoveUITests.swift */; };
+		5BE287A92472ACFB001D83DC /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE287A82472ACFB001D83DC /* MenuController.swift */; };
+		5BE287AC2472AD11001D83DC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE287AB2472AD11001D83DC /* User.swift */; };
+		5BE287AE2472AD27001D83DC /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE287AD2472AD27001D83DC /* Coordinate.swift */; };
+		5BE287B12472AD5C001D83DC /* CreateUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE287B02472AD5C001D83DC /* CreateUserAccount.swift */; };
+		5BE287B42472AD80001D83DC /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE287B32472AD80001D83DC /* LoginController.swift */; };
+		5BE287B72472ADA9001D83DC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE287B62472ADA9001D83DC /* MapView.swift */; };
+		5BE287B92472ADD1001D83DC /* LocationSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE287B82472ADD1001D83DC /* LocationSearchController.swift */; };
+		5BE287BB2472ADEB001D83DC /* LocationSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE287BA2472ADEB001D83DC /* LocationSearchCell.swift */; };
+		5BE287BE2472AE12001D83DC /* alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE287BD2472AE12001D83DC /* alert.swift */; };
+		5BE287C02472AE38001D83DC /* AlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE287BF2472AE38001D83DC /* AlertButton.swift */; };
+		5BE287C22472AE55001D83DC /* ViewAnchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE287C12472AE55001D83DC /* ViewAnchors.swift */; };
+		8CADE942F843D65363F2901E /* Pods_HoodLove_HoodLoveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB29DBF6C207F2F8201BE08 /* Pods_HoodLove_HoodLoveUITests.framework */; };
+		AAA63BD93AA4DC70B1493342 /* Pods_HoodLoveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C351FB0D27B76B1E9D712F6A /* Pods_HoodLoveTests.framework */; };
+		D540A2D3961F9B856D759F7F /* Pods_HoodLove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEFA7101D0E108ED85EB776 /* Pods_HoodLove.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +50,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DEFA7101D0E108ED85EB776 /* Pods_HoodLove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoodLove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B49D23CBCF87355A4AD3CFF /* Pods-HoodLoveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoodLoveTests.debug.xcconfig"; path = "Target Support Files/Pods-HoodLoveTests/Pods-HoodLoveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B8BACB721A43AE23B0CF83C /* Pods-HoodLove-HoodLoveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoodLove-HoodLoveUITests.release.xcconfig"; path = "Target Support Files/Pods-HoodLove-HoodLoveUITests/Pods-HoodLove-HoodLoveUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5BA41E7D2473F73500CD16CC /* HoodLove.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HoodLove.entitlements; sourceTree = "<group>"; };
+		5BA41E842473FF6900CD16CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5BE287742472ACAE001D83DC /* HoodLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoodLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE287772472ACAE001D83DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BE287792472ACAE001D83DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +69,23 @@
 		5BE287952472ACB1001D83DC /* HoodLoveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoodLoveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE287992472ACB1001D83DC /* HoodLoveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoodLoveUITests.swift; sourceTree = "<group>"; };
 		5BE2879B2472ACB1001D83DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE287A82472ACFB001D83DC /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		5BE287AB2472AD11001D83DC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5BE287AD2472AD27001D83DC /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		5BE287B02472AD5C001D83DC /* CreateUserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserAccount.swift; sourceTree = "<group>"; };
+		5BE287B32472AD80001D83DC /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		5BE287B62472ADA9001D83DC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		5BE287B82472ADD1001D83DC /* LocationSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchController.swift; sourceTree = "<group>"; };
+		5BE287BA2472ADEB001D83DC /* LocationSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchCell.swift; sourceTree = "<group>"; };
+		5BE287BD2472AE12001D83DC /* alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alert.swift; sourceTree = "<group>"; };
+		5BE287BF2472AE38001D83DC /* AlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButton.swift; sourceTree = "<group>"; };
+		5BE287C12472AE55001D83DC /* ViewAnchors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnchors.swift; sourceTree = "<group>"; };
+		5FB29DBF6C207F2F8201BE08 /* Pods_HoodLove_HoodLoveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoodLove_HoodLoveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C344E96409C9B3F49678E5 /* Pods-HoodLoveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoodLoveTests.release.xcconfig"; path = "Target Support Files/Pods-HoodLoveTests/Pods-HoodLoveTests.release.xcconfig"; sourceTree = "<group>"; };
+		64ED127C8127439995C4C81B /* Pods-HoodLove.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoodLove.debug.xcconfig"; path = "Target Support Files/Pods-HoodLove/Pods-HoodLove.debug.xcconfig"; sourceTree = "<group>"; };
+		AD2A417FB8471727DC662553 /* Pods-HoodLove-HoodLoveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoodLove-HoodLoveUITests.debug.xcconfig"; path = "Target Support Files/Pods-HoodLove-HoodLoveUITests/Pods-HoodLove-HoodLoveUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C351FB0D27B76B1E9D712F6A /* Pods_HoodLoveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoodLoveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFEA43E203F3072E2626571C /* Pods-HoodLove.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoodLove.release.xcconfig"; path = "Target Support Files/Pods-HoodLove/Pods-HoodLove.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D540A2D3961F9B856D759F7F /* Pods_HoodLove.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAA63BD93AA4DC70B1493342 /* Pods_HoodLoveTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CADE942F843D65363F2901E /* Pods_HoodLove_HoodLoveUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +123,8 @@
 				5BE2878D2472ACB1001D83DC /* HoodLoveTests */,
 				5BE287982472ACB1001D83DC /* HoodLoveUITests */,
 				5BE287752472ACAE001D83DC /* Products */,
+				BC68A7E7C21F09F70D15D8EB /* Pods */,
+				BEC325004F1EDC43C29436C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,8 +141,15 @@
 		5BE287762472ACAE001D83DC /* HoodLove */ = {
 			isa = PBXGroup;
 			children = (
+				5BA41E7D2473F73500CD16CC /* HoodLove.entitlements */,
+				5BE287BC2472AE01001D83DC /* ViewExt */,
+				5BE287B52472AD97001D83DC /* MapController */,
+				5BE287AF2472AD40001D83DC /* CreateUser */,
+				5BE287AA2472AD06001D83DC /* Models */,
+				5BE287A72472ACDA001D83DC /* MenuController */,
 				5BE287772472ACAE001D83DC /* AppDelegate.swift */,
 				5BE287792472ACAE001D83DC /* SceneDelegate.swift */,
+				5BA41E842473FF6900CD16CC /* GoogleService-Info.plist */,
 				5BE2877B2472ACAE001D83DC /* ViewController.swift */,
 				5BE2877D2472ACAE001D83DC /* Main.storyboard */,
 				5BE287802472ACB1001D83DC /* Assets.xcassets */,
@@ -128,6 +177,75 @@
 			path = HoodLoveUITests;
 			sourceTree = "<group>";
 		};
+		5BE287A72472ACDA001D83DC /* MenuController */ = {
+			isa = PBXGroup;
+			children = (
+				5BE287A82472ACFB001D83DC /* MenuController.swift */,
+			);
+			path = MenuController;
+			sourceTree = "<group>";
+		};
+		5BE287AA2472AD06001D83DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5BE287AB2472AD11001D83DC /* User.swift */,
+				5BE287AD2472AD27001D83DC /* Coordinate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5BE287AF2472AD40001D83DC /* CreateUser */ = {
+			isa = PBXGroup;
+			children = (
+				5BE287B02472AD5C001D83DC /* CreateUserAccount.swift */,
+				5BE287B32472AD80001D83DC /* LoginController.swift */,
+			);
+			path = CreateUser;
+			sourceTree = "<group>";
+		};
+		5BE287B52472AD97001D83DC /* MapController */ = {
+			isa = PBXGroup;
+			children = (
+				5BE287B62472ADA9001D83DC /* MapView.swift */,
+				5BE287B82472ADD1001D83DC /* LocationSearchController.swift */,
+				5BE287BA2472ADEB001D83DC /* LocationSearchCell.swift */,
+			);
+			path = MapController;
+			sourceTree = "<group>";
+		};
+		5BE287BC2472AE01001D83DC /* ViewExt */ = {
+			isa = PBXGroup;
+			children = (
+				5BE287BD2472AE12001D83DC /* alert.swift */,
+				5BE287BF2472AE38001D83DC /* AlertButton.swift */,
+				5BE287C12472AE55001D83DC /* ViewAnchors.swift */,
+			);
+			path = ViewExt;
+			sourceTree = "<group>";
+		};
+		BC68A7E7C21F09F70D15D8EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64ED127C8127439995C4C81B /* Pods-HoodLove.debug.xcconfig */,
+				EFEA43E203F3072E2626571C /* Pods-HoodLove.release.xcconfig */,
+				AD2A417FB8471727DC662553 /* Pods-HoodLove-HoodLoveUITests.debug.xcconfig */,
+				4B8BACB721A43AE23B0CF83C /* Pods-HoodLove-HoodLoveUITests.release.xcconfig */,
+				2B49D23CBCF87355A4AD3CFF /* Pods-HoodLoveTests.debug.xcconfig */,
+				64C344E96409C9B3F49678E5 /* Pods-HoodLoveTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BEC325004F1EDC43C29436C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DEFA7101D0E108ED85EB776 /* Pods_HoodLove.framework */,
+				5FB29DBF6C207F2F8201BE08 /* Pods_HoodLove_HoodLoveUITests.framework */,
+				C351FB0D27B76B1E9D712F6A /* Pods_HoodLoveTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BE2879E2472ACB1001D83DC /* Build configuration list for PBXNativeTarget "HoodLove" */;
 			buildPhases = (
+				7CF4D41CF843DBDF8B87E987 /* [CP] Check Pods Manifest.lock */,
 				5BE287702472ACAE001D83DC /* Sources */,
 				5BE287712472ACAE001D83DC /* Frameworks */,
 				5BE287722472ACAE001D83DC /* Resources */,
+				35D8F19ECF5DEF995A8C780E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +272,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BE287A12472ACB1001D83DC /* Build configuration list for PBXNativeTarget "HoodLoveTests" */;
 			buildPhases = (
+				F4A192A9552664018ADF6D26 /* [CP] Check Pods Manifest.lock */,
 				5BE287862472ACB1001D83DC /* Sources */,
 				5BE287872472ACB1001D83DC /* Frameworks */,
 				5BE287882472ACB1001D83DC /* Resources */,
@@ -170,9 +291,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BE287A42472ACB1001D83DC /* Build configuration list for PBXNativeTarget "HoodLoveUITests" */;
 			buildPhases = (
+				2BE44E29A0A2086E9BAC9FBC /* [CP] Check Pods Manifest.lock */,
 				5BE287912472ACB1001D83DC /* Sources */,
 				5BE287922472ACB1001D83DC /* Frameworks */,
 				5BE287932472ACB1001D83DC /* Resources */,
+				7DF7BFAAE3BA3456EB961D20 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BE287842472ACB1001D83DC /* LaunchScreen.storyboard in Resources */,
+				5BA41E852473FF6900CD16CC /* GoogleService-Info.plist in Resources */,
 				5BE287812472ACB1001D83DC /* Assets.xcassets in Resources */,
 				5BE2877F2472ACAE001D83DC /* Main.storyboard in Resources */,
 			);
@@ -254,14 +378,128 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BE44E29A0A2086E9BAC9FBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HoodLove-HoodLoveUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35D8F19ECF5DEF995A8C780E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HoodLove/Pods-HoodLove-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HoodLove/Pods-HoodLove-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HoodLove/Pods-HoodLove-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CF4D41CF843DBDF8B87E987 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HoodLove-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DF7BFAAE3BA3456EB961D20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HoodLove-HoodLoveUITests/Pods-HoodLove-HoodLoveUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HoodLove-HoodLoveUITests/Pods-HoodLove-HoodLoveUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HoodLove-HoodLoveUITests/Pods-HoodLove-HoodLoveUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4A192A9552664018ADF6D26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HoodLoveTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5BE287702472ACAE001D83DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BE287A92472ACFB001D83DC /* MenuController.swift in Sources */,
+				5BE287BB2472ADEB001D83DC /* LocationSearchCell.swift in Sources */,
 				5BE2877C2472ACAE001D83DC /* ViewController.swift in Sources */,
+				5BE287C22472AE55001D83DC /* ViewAnchors.swift in Sources */,
+				5BE287B12472AD5C001D83DC /* CreateUserAccount.swift in Sources */,
 				5BE287782472ACAE001D83DC /* AppDelegate.swift in Sources */,
+				5BE287AC2472AD11001D83DC /* User.swift in Sources */,
+				5BE287B42472AD80001D83DC /* LoginController.swift in Sources */,
+				5BE287B92472ADD1001D83DC /* LocationSearchController.swift in Sources */,
 				5BE2877A2472ACAE001D83DC /* SceneDelegate.swift in Sources */,
+				5BE287B72472ADA9001D83DC /* MapView.swift in Sources */,
+				5BE287BE2472AE12001D83DC /* alert.swift in Sources */,
+				5BE287AE2472AD27001D83DC /* Coordinate.swift in Sources */,
+				5BE287C02472AE38001D83DC /* AlertButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,16 +670,19 @@
 		};
 		5BE2879F2472ACB1001D83DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64ED127C8127439995C4C81B /* Pods-HoodLove.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HoodLove/HoodLove.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CRW6VYDHKQ;
+				DEVELOPMENT_TEAM = ZC9C9YXV9Z;
 				INFOPLIST_FILE = HoodLove/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Martin.HoodLove;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Martin.HoodLove1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,16 +691,19 @@
 		};
 		5BE287A02472ACB1001D83DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFEA43E203F3072E2626571C /* Pods-HoodLove.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HoodLove/HoodLove.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CRW6VYDHKQ;
+				DEVELOPMENT_TEAM = ZC9C9YXV9Z;
 				INFOPLIST_FILE = HoodLove/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Martin.HoodLove;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Martin.HoodLove1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -468,6 +712,7 @@
 		};
 		5BE287A22472ACB1001D83DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B49D23CBCF87355A4AD3CFF /* Pods-HoodLoveTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +735,7 @@
 		};
 		5BE287A32472ACB1001D83DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64C344E96409C9B3F49678E5 /* Pods-HoodLoveTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +758,7 @@
 		};
 		5BE287A52472ACB1001D83DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD2A417FB8471727DC662553 /* Pods-HoodLove-HoodLoveUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +779,7 @@
 		};
 		5BE287A62472ACB1001D83DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B8BACB721A43AE23B0CF83C /* Pods-HoodLove-HoodLoveUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
