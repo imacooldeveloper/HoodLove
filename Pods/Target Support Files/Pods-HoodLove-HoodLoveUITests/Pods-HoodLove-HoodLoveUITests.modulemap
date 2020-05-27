@@ -1,0 +1,6 @@
+framework module Pods_HoodLove_HoodLoveUITests {
+  umbrella header "Pods-HoodLove-HoodLoveUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
